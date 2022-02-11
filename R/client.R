@@ -247,7 +247,7 @@ GraphqlClient <- R6::R6Class(
 
   private = list(
     # @field .var_regex variable regexp 
-    .var_regex = '\\$([[:alnum:]]+)',
+    .var_regex = '\\$([_A-Za-z][_0-9A-Za-z]*)',
 
     # @description rewrite query if there is fragments, leave equal otherwise
     # @param x (character) a query, of class `query` or `fragment`
